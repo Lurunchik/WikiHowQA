@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>AutoWikiHow</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="https://semantic-ui.com/javascript/library/tablesort.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="base.css">
+</head>
+
+<body>
+<div class="ui grid center aligned">
+    <div class="row">
+        <div class="column padding-reset">
+            <div class="ui huge message center aligned page grid">
+                <h1 class="ui huge header">AutoWikiHow</h1> <br>
+                <p><b>AutoWikiHow</b> is a resource containing datasets constructed from WikiHow.
+                    There are several tasks including summarization, non-factoid QA...</p>
+                <a class="ui blue button">Paper &raquo;</a>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="ui container fluid" style="margin-bottom: 3em;">
+<div class="ui horizontal large center aligned header divider" style="margin-top: 0.3em; margin-bottom: -0.8em">
+     Tasks</div>
+
+<!--    <h1 class="ui large center aligned header" style="margin-top: 1em; margin-bottom: -1.8em">Tasks</h1> <br>-->
+
+    <div class="ui four item secondary pointing menu">
+        <a class=" item" onclick="location.href='index.html'">
+            <i class="stack exchange icon"></i>
+<!--                Multi-document Non-factoid Question Answering (-->
+            multi-doc NFQA
+        </a>
+        <a class="active item" onclick="location.href='dataset_task2_dataset1.html'">
+            <i class="newspaper icon"></i>
+<!--                Query-Focused multi-document summarization (-->
+            qMDS
+<!--            )-->
+        </a>
+        <a class=" item" onclick="location.href='task3.html'">
+            <i class="newspaper outline icon"></i>
+                Summarization
+        </a>
+        <a class=" item" onclick="location.href='task4.html'">
+            <i class="searchengin icon"></i>
+                Document Selection (IR)
+        </a>
+    </div>
+</div>
+
+
+
+
+<div class="ui vertical stripe segment">
+    <div class="ui container">
+        <h3 class="ui header" id="task" >
+            Query-Focused multi-document summarization (qMDS)
+        </h3>
+        <p>Given a set of documents and query the task is to summarize the documents such as the summary will be relevant to a given query.</p>
+    </div>
+
+    <div class="ui container" style="margin-top: 3em; margin-bottom: 3em;">
+        <div class="ui horizontal secondary center aligned header divider">Proposed datasets</div>
+        <!--  <div class="ui center aligned secondary header" style="margin-top: 1em;">Proposed datasets for the task</div>-->
+
+        <div class="ui two item secondary pointing menu">
+            <a class="active item" onclick="location.href='dataset_task2_dataset1.html'">
+                <i class="list ol icon"></i>
+                HowSumm Step Explicit Links
+            </a>
+            <a class=" item" onclick="location.href='dataset_task2_dataset2.html'">
+                <i class="align left icon"></i>
+                HowSumm Step Description All Links
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+
+<div class="ui stackable grid container">
+    <div class="wide column">
+        <h4 class="ui piled segment top attached header">
+           Summarize given referenced documents into target step description.
+        </h4>
+        <div class="ui piled segment attached">
+            <p>Given a query (in the form of joined "step.method.article" titles) and a set of HTMLs which
+                from the step description could be constructed, summarize target sterp description </p>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="ui container" style="margin-top: 1em; margin-bottom: 3em;">
+    <div class="ui three item secondary pointing menu">
+        <a class=" item" id="dataset" onclick="location.href='dataset_task2_dataset1.html#task'">
+            <i class="database icon"></i>
+            Dataset
+        </a>
+        <a class="active item" id="explore" onclick="location.href='explore_task2_dataset1.html#task'">
+            <i class="chart bar outline icon"></i>
+            Explore
+        </a>
+        <a class=" item" id="download" onclick="location.href='download_task2_dataset1.html#task'">
+            <i class="cloud download icon"></i>
+            Download</a>
+    </div>
+</div>
+
+
+
+
+<div class="ui stackable grid container">
+    <div class="eight wide column">
+        stats about qMDS HowSummStep
+    </div>
+</div>
+
+
+
+
+
+<br>
+<div class="ui divider"></div>
+<div class="ui vertical footer segment">
+    <div class="ui container">
+        © 2022 | <a href="https://github.com/Lurunchik/autowikihow">AutoWikiHow on Github</a>
+    </div>
+</div>
+
+</body>
+
+</html>
