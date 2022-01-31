@@ -46,7 +46,7 @@
 <!--                Multi-document Non-factoid Question Answering (-->
             multi-doc NFQA
         </a>
-        <a class=" item" onclick="location.href='task2.html'">
+        <a class=" item" onclick="location.href='dataset_task2_dataset1.html'">
             <i class="newspaper icon"></i>
 <!--                Query-Focused multi-document summarization (-->
             qMDS
@@ -68,7 +68,7 @@
 
 <div class="ui vertical stripe segment">
     <div class="ui container">
-        <h3 class="ui header">
+        <h3 class="ui header" id="task" >
             Multi-document Non-factoid Question Answering
         </h3>
         <p>Given a question and set of related documents the goal is to generate answer to a non-factoid question.</p>
@@ -87,7 +87,7 @@
                 <i class="list ol icon"></i>
                 How-to step generation
             </a>
-            <a class=" item" onclick="location.href='task1_2dataset.html'">
+            <a class=" item" onclick="location.href='dataset_task1_dataset2.html'">
                 <i class="align left icon"></i>
                 How-to passage answer
             </a>
@@ -98,21 +98,37 @@
 
 
 
-<div class="ui container" style="margin-bottom: 3em;">
+
+<div class="ui stackable grid container">
+    <div class="wide column">
+        <h4 class="ui piled segment top attached header">
+            How-to generation step task
+        </h4>
+        <div class="ui piled segment attached">
+            <p>Given a question and related HTML pages the goal is to generate n-step instruction</p>
+            <p>The unique input is quesiton+html list </p>
+        </div>
+    </div>
+</div>
+
+<div class="ui container" style="margin-top: 1em; margin-bottom: 3em;">
     <div class="ui three item secondary pointing menu">
-        <a class="item" onclick="location.href='index.html'">
+        <a class=" item" id="dataset" onclick="location.href='index.html#task'">
             <i class="database icon"></i>
             Dataset
         </a>
-        <a class="active item" onclick="location.href='exploretask1.html'">
+        <a class="active item" id="explore" onclick="location.href='explore_task1_dataset1.html#task'">
             <i class="chart bar outline icon"></i>
             Explore
         </a>
-        <a class="item" onclick="location.href='download.html'">
+        <a class=" item" id="download" onclick="location.href='download_task1_dataset1.html#task'">
             <i class="cloud download icon"></i>
             Download</a>
     </div>
 </div>
+
+
+
 <div class="ui stackable grid container">
     <div class="eight wide column">
         <html>
@@ -189,6 +205,9 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
 </html>
     </div>
 </div>
+
+
+
 
 
 <br>

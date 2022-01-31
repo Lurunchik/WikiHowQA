@@ -1,23 +1,36 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block taskdescription %}
 
-<div class="ui stackable grid container">
-    <div class="wide column">
-        <h4 class="ui top attached header">
-            Generate a passage-level answer to a Instruction question from multiple documents.
-        </h4>
-        <div class="ui segment attached">
-            <p>Given a question and related HTML pages the goal is to generate a passage-level answer</p>
-            <p>The target answers in dataset are thorough passage-level summary of a full answer
-                written by a wikihow article author</p>
+<div class="ui vertical stripe segment">
+    <div class="ui container">
+        <h3 class="ui header" id="task" >
+            Query-Focused multi-document summarization (qMDS)
+        </h3>
+        <p>Given a set of documents and query the task is to summarize the documents such as the summary will be relevant to a given query.</p>
+    </div>
+
+    <div class="ui container" style="margin-top: 3em; margin-bottom: 3em;">
+        <div class="ui horizontal secondary center aligned header divider">Proposed datasets</div>
+        <!--  <div class="ui center aligned secondary header" style="margin-top: 1em;">Proposed datasets for the task</div>-->
+
+        <div class="ui two item secondary pointing menu">
+            <a class="{{ active_task_dataset1 }} item" onclick="location.href='dataset_task2_dataset1.html'">
+                <i class="list ol icon"></i>
+                HowSumm Step Explicit Links
+            </a>
+            <a class="{{ active_task_dataset2 }} item" onclick="location.href='dataset_task2_dataset2.html'">
+                <i class="align left icon"></i>
+                HowSumm Step Description All Links
+            </a>
+
         </div>
     </div>
-</div>
+
+{% endblock %}
 
 
 {% block taskdetail%}
 
 {% endblock %}
-
-{% endblock %}
+</div>

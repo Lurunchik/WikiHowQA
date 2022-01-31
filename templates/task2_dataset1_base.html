@@ -1,0 +1,40 @@
+{% extends "task2_base.html" %}
+
+{% block taskdetail%}
+
+<div class="ui stackable grid container">
+    <div class="wide column">
+        <h4 class="ui piled segment top attached header">
+           Summarize given referenced documents into target step description.
+        </h4>
+        <div class="ui piled segment attached">
+            <p>Given a query (in the form of joined "step.method.article" titles) and a set of HTMLs which
+                from the step description could be constructed, summarize target sterp description </p>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="ui container" style="margin-top: 1em; margin-bottom: 3em;">
+    <div class="ui three item secondary pointing menu">
+        <a class="{{ 'active' if html_file == 'dataset_task2_dataset1.html' else '' }} item" id="dataset" onclick="location.href='dataset_task2_dataset1.html#task'">
+            <i class="database icon"></i>
+            Dataset
+        </a>
+        <a class="{{ 'active' if html_file == 'explore_task2_dataset1.html' else '' }} item" id="explore" onclick="location.href='explore_task2_dataset1.html#task'">
+            <i class="chart bar outline icon"></i>
+            Explore
+        </a>
+        <a class="{{ 'active' if html_file == 'download_task2_dataset1.html' else '' }} item" id="download" onclick="location.href='download_task2_dataset1.html#task'">
+            <i class="cloud download icon"></i>
+            Download</a>
+    </div>
+</div>
+
+
+{% block datasetpage%}
+{% endblock %}
+
+
+{% endblock %}

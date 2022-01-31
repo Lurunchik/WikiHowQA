@@ -17,47 +17,60 @@
 </head>
 
 <body>
-  <div class="ui grid center aligned">
-        <div class="row">
-            <div class="column padding-reset">
-                <div class="ui huge message center aligned page grid">
-                    <h1 class="ui huge header">AutoWikiHow</h1> <br>
-                    <p><b>AutoWikiHow</b> is a resource containing datasets constructed from WikiHow.
+<div class="ui grid center aligned">
+    <div class="row">
+        <div class="column padding-reset">
+            <div class="ui huge message center aligned page grid">
+                <h1 class="ui huge header">AutoWikiHow</h1> <br>
+                <p><b>AutoWikiHow</b> is a resource containing datasets constructed from WikiHow.
                     There are several tasks including summarization, non-factoid QA...</p>
-                    <a class="ui blue button">Paper &raquo;</a>
-                </div>
+                <a class="ui blue button">Paper &raquo;</a>
+
             </div>
+
         </div>
     </div>
 
-    <div class="ui container" style="margin-bottom: 3em;">
-        <div class="ui five item secondary pointing menu">
-            <a class="{{ active_task1 }} item" onclick="location.href='index.html'">
-                <i class="database icon"></i>
-                Multi-doc step generation
-            </a>
-            <a class="{{ active_task2 }} item" onclick="location.href='task2.html'">
-                <i class="chart bar outline icon"></i>
-                Multi-doc passage QA
-            </a>
-            <a class="{{ active_task3 }} item" onclick="location.href='task3.html'">
-                <i class="chart bar outline icon"></i>
-                Task3
-            </a>
-            <a class="{{ active_task4 }} item" onclick="location.href='task4.html'">
-                <i class="chart bar outline icon"></i>
-                Task4
-            </a>
-            <a class="{{ active_task5 }} item" onclick="location.href='task5.html'">
-                <i class="chart bar outline icon"></i>
-                Task5
-            </a>
-        </div>
+</div>
+
+
+<div class="ui container fluid" style="margin-bottom: 3em;">
+<div class="ui horizontal large center aligned header divider" style="margin-top: 0.3em; margin-bottom: -0.8em">
+     Tasks</div>
+
+<!--    <h1 class="ui large center aligned header" style="margin-top: 1em; margin-bottom: -1.8em">Tasks</h1> <br>-->
+
+    <div class="ui four item secondary pointing menu">
+        <a class="{{ active_task1 }} item" onclick="location.href='index.html'">
+            <i class="stack exchange icon"></i>
+<!--                Multi-document Non-factoid Question Answering (-->
+            multi-doc NFQA
+        </a>
+        <a class="{{ active_task2 }} item" onclick="location.href='dataset_task2_dataset1.html'">
+            <i class="newspaper icon"></i>
+<!--                Query-Focused multi-document summarization (-->
+            qMDS
+<!--            )-->
+        </a>
+        <a class="{{ active_task3 }} item" onclick="location.href='task3.html'">
+            <i class="newspaper outline icon"></i>
+                Summarization
+        </a>
+        <a class="{{ active_task4 }} item" onclick="location.href='task4.html'">
+            <i class="searchengin icon"></i>
+                Document Selection (IR)
+        </a>
     </div>
+</div>
 
-    {% block content%}
 
-    {% endblock %}
+{% block taskdescription %}
+
+{% endblock %}
+
+{% block taskdetail%}
+
+{% endblock %}
 
 <br>
 <div class="ui divider"></div>
