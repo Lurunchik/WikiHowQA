@@ -32,17 +32,7 @@ TASKS = [
                         'http://web.archive.org/web/20210306051740/http://centuracollege.edu/blog/10-effective-study-habits-for-college-students/': '10 Effective Study Habits for College Students Centura College Blog',
                         'http://web.archive.org/web/20211201175907/https://www.educationcorner.com/habits-of-successful-students.html': 'Study Habits of Highly Effective Students'}
                 }),
-    ]),
-    Task(name='qMDS', datasets=[
-        Dataset(name='howsumm_teps',
-                example={'wikihow_article_id': 512687,
-                         'question': 'How To Sled? Going faster: Pack and freeze the snow.',
-                         'target_step_description': 'Sled down the same spot to pack the snow down and make a flatter, faster track. If the temperature is below freezing and you have some time, spray the track with water and wait until it freezes. Repeat several times to make a slick, icy track.',
-                         'external_urls': {
-                             'http://web.archive.org/web/20150919115249/https://www.trails.com/how_13043_make-sleds-faster.html': 'How to Make Sleds Faster'},
-                         }
-                ),
-    ]),
+    ])
 ]
 
 HTML_TEMPLATES = ['dataset', 'explore', 'download']

@@ -21,11 +21,11 @@
     <div class="row">
         <div class="column padding-reset">
             <div class="ui huge message center aligned page grid">
-                <h1 class="ui huge header">AutoWikiHow</h1> <br>
-                <p><b>AutoWikiHow</b> is a resource containing six datasets all constructed from
+                <h1 class="ui huge header">WikiHowQA</h1> <br>
+                <p><b>WikiHowQA</b> is a resource containing six datasets all constructed from
                     <a href="https://www.wikihow.com/wikiHow:About-wikiHow">WikiHow web resource</a>.
                     There are several tasks including summarization, non-factoid QA...</p>
-                <a class="ui blue button">Paper &raquo;</a>
+                <a class="ui blue button" href="../data/ACL_MD_NFQA_dataset.pdf">Paper &raquo;</a>
 
             </div>
 
@@ -35,35 +35,7 @@
 </div>
 
 
-<div class="ui container fluid" style="margin-bottom: 3em;">
-<div class="ui horizontal large center aligned header divider" style="margin-top: 0.3em; margin-bottom: -0.4em">
-     Tasks</div>
-
-<!--    <h1 class="ui large center aligned header" style="margin-top: 1em; margin-bottom: -1.8em">Tasks</h1> <br>-->
-
-    <div class="ui three item secondary pointing menu">
-        <a class="active item" onclick="location.href='index.html'">
-            <i class="stack exchange icon"></i>
-<!--                Multi-document Non-factoid Question Answering (-->
-            multi-doc NFQA
-        </a>
-        <a class=" item" onclick="location.href='dataset_task2_dataset1.html'">
-            <i class="newspaper icon"></i>
-<!--                Query-Focused multi-document summarization (-->
-            qMDS
-<!--            )-->
-        </a>
-<!--        <a class=" item" onclick="location.href='task3.html'">-->
-<!--            <i class="newspaper outline icon"></i>-->
-<!--                Summarization-->
-<!--        </a>-->
-        <a class=" item" onclick="location.href='task4.html'">
-            <i class="searchengin icon"></i>
-                Document Selection (IR)
-        </a>
-    </div>
-</div>
-
+<div class="ui container fluid" style="margin-bottom: 3em;"></div>
 
 
 
@@ -75,26 +47,21 @@
         <p>Given a question and set of related documents the goal is to generate answer to a non-factoid question.</p>
     </div>
 
+</div>
+<!--    <div class="ui container" style="margin-top: 3em; margin-bottom: 3em;">-->
 
-    <div class="ui container" style="margin-top: 3em; margin-bottom: 3em;">
-        <div class="ui horizontal secondary center aligned header divider"
-             style="margin-top: 0.3em; margin-bottom: -0.8em">
-            Proposed datasets
-        </div>
-        <!--  <div class="ui center aligned secondary header" style="margin-top: 1em;">Proposed datasets for the task</div>-->
+<!--        <div class="ui two item secondary pointing menu">-->
+<!--            <a class="active item" onclick="location.href='index.html'">-->
+<!--                <i class="list ol icon"></i>-->
+<!--                How-to step generation-->
+<!--            </a>-->
+<!--            <a class=" item" onclick="location.href='dataset_task1_dataset2.html'">-->
+<!--                <i class="align left icon"></i>-->
+<!--                How-to passage answer-->
+<!--            </a>-->
 
-        <div class="ui two item secondary pointing menu">
-            <a class="active item" onclick="location.href='index.html'">
-                <i class="list ol icon"></i>
-                How-to step generation
-            </a>
-            <a class=" item" onclick="location.href='dataset_task1_dataset2.html'">
-                <i class="align left icon"></i>
-                How-to passage answer
-            </a>
-
-        </div>
-    </div>
+<!--        </div>-->
+<!--    </div>-->
 
 
 
@@ -215,7 +182,7 @@ e.exports=function(t){return null!=t&&(n(t)||function(t){return"function"==typeo
 <div class="ui divider"></div>
 <div class="ui vertical footer segment">
     <div class="ui container">
-        © 2022 | <a href="https://github.com/Lurunchik/autowikihow">AutoWikiHow on Github</a>
+        © 2022 | <a href="https://github.com/Lurunchik/wikihowQA"> WikiHowQA on Github</a>
     </div>
 </div>
 
