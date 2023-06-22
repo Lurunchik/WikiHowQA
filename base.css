@@ -93,3 +93,35 @@
     top: 50%;
     left: 100%;
 }
+
+.header-section {
+    background-image: url('https://media.discordapp.net/attachments/1121324118730604606/1121350283214209034/lurunchik_Generate_a_seamless_pattern_for_a_header_image_in_the_8198033b-70a7-43a9-98d9-1cef9bfbbcab.png?width=1168&height=1168');
+    color: white;
+    padding: 150px 0;
+}
+.header-section .ui.huge.header {
+    font-size: 3em;
+}
+.header-section .ui.huge.message {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+}
+
+
+.header-section .ui.huge.header {
+    font-size: 3em;
+    text-shadow: none;
+    background-color: #F7A728;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.description-section {
+    background-color: #121A2E;
+    color: #121A2E;
+    padding: 50px 0;
+}
+
+.header-section {
+    padding: 150px !important; /* Increase padding */
+}

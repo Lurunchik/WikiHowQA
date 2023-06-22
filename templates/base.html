@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>AutoWikiHow</title>
+    <title>WikiHowQA</title>
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -17,32 +17,35 @@
 </head>
 
 <body>
-<div class="ui grid center aligned">
+<div class="ui grid center aligned header-section">
     <div class="row">
         <div class="column padding-reset">
             <div class="ui huge message center aligned page grid">
-                <h1 class="ui huge header">WikiHowQA</h1> <br>
-                <p><b>WikiHowQA</b> is a resource containing six datasets all constructed from
-                    <a href="https://www.wikihow.com/wikiHow:About-wikiHow">WikiHow web resource</a>.
-                    There are several tasks including summarization, non-factoid QA...</p>
-                <a class="ui blue button" href="data/ACL_MD_NFQA_dataset.pdf">Paper &raquo;</a>
-
+                <h1 class="ui huge header">WikiHowQA</h1>
             </div>
-
         </div>
     </div>
-
 </div>
 
+<div class="ui grid center aligned description-section">
+    <div class="row">
+        <div class="column padding-reset">
+            <div class="ui message center aligned page grid">
+                <p><b>WikiHowQA</b> is a pioneering dataset set to redefine the landscape of Multi-Document Non-Factoid Question Answering (MD-NFQA). Drawing from the rich "how-to" content of the popular WikiHow website, WikiHowQA shines a spotlight on this underrepresented category in current MD-NFQA datasets.</p>
+                <a class="ui blue button" href="data/ACL_MD_NFQA_dataset.pdf">Learn More &raquo;</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="ui container fluid" style="margin-bottom: 3em;"></div>
 
 {% block taskdescription %}
-
+<p>Comprising 11,746 human-written answers and 74,527 supporting documents, WikiHowQA is more than a dataset; it's a springboard for researchers aiming to develop advanced QA systems.</p>
 {% endblock %}
 
 {% block taskdetail%}
-
+<p>Our paper also unveils a unique human evaluation framework that smartly employs highlighted relevant supporting passages to circumvent common challenges in the field. Join us in exploring WikiHowQA, and together, let's shape the future of question answering systems.</p>
 {% endblock %}
 
 <br>
