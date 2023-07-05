@@ -19,7 +19,6 @@ class Task:
 
 TASKS = [
     Task(name='multidocNFQA', datasets=[
-        Dataset(name='step_answer', example={}),
         Dataset(name='passage_answeer',
                 example={
                     'wikihow_article_id': 56853,

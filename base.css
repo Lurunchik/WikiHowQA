@@ -12,6 +12,74 @@
     top: 10px;
     left: 0;
 }
+/* Use Oswald for headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    color: #F7A728; /* Change the color to a light color */
+}
+
+/* Use Merriweather for other text and increase the font size */
+body {
+    font-family: 'Merriweather', serif;
+    color: #F7A728; /* Change the color to a light color */
+}
+
+.description-section {
+    background-color: #121A2E !important;
+    color: #F7A728 !important; /* This will apply to all text within the description section */
+    padding: 60px 0 !important;
+}
+
+.description-section .ui.container.text-container {
+    max-width: 1500px !important; /* Adjust this value to control the width of the text */
+    margin: 0 auto !important; /* Center the text container */
+    color: #F7A728 !important; /* This will apply to all text within the text container */
+}
+.ui.menu .item {
+    color: #F7A728 !important;
+}
+
+.ui.menu .active.item {
+    border-bottom: 2px solid #F7A728 !important;
+    color: #F7A728 !important;
+}
+
+.ui.center.aligned.icon.sub.header {
+    color: #F7A728 !important;
+}
+
+.ui.center.aligned.icon.sub.header .icon {
+    color: #F7A728 !important;
+}
+
+
+.ui.table {
+    color: #F7A728;
+    background-color: #121A2E;
+}
+
+.ui.table th {
+    color: #F7A728;
+    background-color: #121A2E;
+}
+
+.ui.table td {
+    color: #F7A728;
+    background-color: #121A2E;
+
+}
+
+table.leaderboard th.human-eval,
+table.leaderboard td.human-eval {
+    background-color: #F7A728;
+    color: #121A2E;
+}
+
+table.leaderboard th.model,
+table.leaderboard td.model {
+    background-color: #F7A728;
+    color: #121A2E;
+}
 
 .masthead.segment {
   min-height: 210px;
@@ -43,10 +111,10 @@
   font-family: 'Abel', 'Lato', sans-serif;
 }
 
-.ui.header .custom.icon {
-  font-size: 1em !important;
-  vertical-align: inherit !important;
-}
+/*.ui.header .custom.icon {*/
+/*  font-size: 1em !important;*/
+/*  vertical-align: inherit !important;*/
+/*}*/
 
 /*tooltip styles*/
 
@@ -57,7 +125,7 @@
   padding: 5px;
   background: rgba(0, 0, 0, 0.7);
   color: white;
-  border-radius: 1px;
+  /*border-radius: 1px;*/
   text-align: left;
   pointer-events: none;
 }
@@ -116,12 +184,29 @@
     padding: 20px;
 }
 
-.description-section {
-    background-color: #121A2E;
-    color: #121A2E;
-    padding: 50px 0;
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.paper-button {
+    background-color: #F7A728 !important;
+    color: black !important;
 }
 
 .header-section {
     padding: 150px !important; /* Increase padding */
+}
+
+.description-section {
+    background-color: #121A2E !important;
+    color: #F7A728 !important;
+    padding: 60px 0 !important;
+
+}
+
+.description-section .ui.container.text-container {
+    max-width: 1500px !important; /* Adjust this value to control the width of the text */
+    margin: 0 auto !important; /* Center the text container */
 }
