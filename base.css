@@ -181,3 +181,16 @@ table.leaderboard th{
 .download-container {
   padding-bottom: 20px;
 }
+
+.footer-section {
+  background-color: #3e4757ff;
+  color: #ffdd2fff;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.footer-section a {
+  color: #ffdd2fff;
+  text-decoration: none;
+}
