@@ -51,6 +51,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding-bottom: 20px;
 }
 
 .button-container a {
@@ -142,4 +143,41 @@ body {
 
 .carousel-control.next {
   right: 10px;
+}
+
+.content-section {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+  border: 1px solid #3e4757ff;
+  padding: 10px;
+  text-align: center;
+}
+
+.leaderboard-table .human-eval {
+  background-color: #3e4757ff;
+  color: #ffdd2fff;
+}
+table.leaderboard td{
+    white-space: nowrap;
+}
+
+table.leaderboard th{
+    white-space: nowrap;
+}
+
+.download-container {
+  padding-bottom: 20px;
 }

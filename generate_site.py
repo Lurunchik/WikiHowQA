@@ -40,33 +40,11 @@ HTML_TEMPLATES = ['dataset', 'explore', 'download']
 def generate():
     # Render html file
     env = Environment(loader=FileSystemLoader('templates'))
-
-    for i, task in enumerate(TASKS):
-        htmls = []
-        for j, dataset in enumerate(task.datasets):
-            for html_file in HTML_TEMPLATES:
-                if i == 0 and j == 0 and html_file == 'dataset':
-                    html_file = 'index.html'
-                else:
-                    html_file = f'{html_file}_task{i + 1}_dataset{j + 1}.html'
-
-                template = env.get_template(html_file)
-                active_task_html = {
-                    f'active_task{k + 1}': "active" if k == i else "" for k in range(len(TASKS))}
-
-                active_dataset_html = {
-                    f'active_task_dataset{k + 1}': "active" if k == j else "" for k in range(len(task.datasets))}
-
-                output_from_parsed_template = template.render(
-                    **{**{'html_file': html_file}, **active_task_html, **active_dataset_html, **dataset.example})
-
-                with open(html_file, "w") as f:
-                    f.write(output_from_parsed_template)
-
-                htmls.append(html_file)
-
-        if htmls:
-            print(f"Generated {','.join(htmls)} for {task.name}")
+    examples = {}
+    template = env.get_template("index.html")
+    output_from_parsed_template = template.render(**{**{'html_file': "index.html"}, **examples})
+    with open("index.html", "w") as f:
+        f.write(output_from_parsed_template)
 
 
 if __name__ == '__main__':
