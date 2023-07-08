@@ -1,212 +1,145 @@
-.svg-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 55%; /* aspect ratio */
-    vertical-align: top;
-    overflow: hidden;
-}
-.svg-content-responsive {
-    display: inline-block;
-    position: absolute;
-    top: 10px;
-    left: 0;
-}
-/* Use Oswald for headers */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;
-    color: #F7A728; /* Change the color to a light color */
-}
-
-/* Use Merriweather for other text and increase the font size */
 body {
-    font-family: 'Merriweather', serif;
-    color: #F7A728; /* Change the color to a light color */
+  margin: 0;
+  padding: 0;
+  background-color: #3e4757ff;
+  color: #ffdd2fff;
 }
 
-.description-section {
-    background-color: #121A2E !important;
-    color: #F7A728 !important; /* This will apply to all text within the description section */
-    padding: 60px 0 !important;
-}
-
-.description-section .ui.container.text-container {
-    max-width: 1500px !important; /* Adjust this value to control the width of the text */
-    margin: 0 auto !important; /* Center the text container */
-    color: #F7A728 !important; /* This will apply to all text within the text container */
-}
-.ui.menu .item {
-    color: #F7A728 !important;
-}
-
-.ui.menu .active.item {
-    border-bottom: 2px solid #F7A728 !important;
-    color: #F7A728 !important;
-}
-
-.ui.center.aligned.icon.sub.header {
-    color: #F7A728 !important;
-}
-
-.ui.center.aligned.icon.sub.header .icon {
-    color: #F7A728 !important;
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #3e4757ff;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 
-.ui.table {
-    color: #F7A728;
-    background-color: #121A2E;
-}
-
-.ui.table th {
-    color: #F7A728;
-    background-color: #121A2E;
-}
-
-.ui.table td {
-    color: #F7A728;
-    background-color: #121A2E;
-
-}
-
-table.leaderboard th.human-eval,
-table.leaderboard td.human-eval {
-    background-color: #F7A728;
-    color: #121A2E;
-}
-
-table.leaderboard th.model,
-table.leaderboard td.model {
-    background-color: #F7A728;
-    color: #121A2E;
-}
-
-.masthead.segment {
-  min-height: 210px;
-  padding: 1em 0em;
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
-    url(option3.jpg) !important;
-  background-size:cover !important;
-  border: none;
-}
-.masthead .logo.item img {
-  margin-right: 15em;
-}
-.list .item {
-  margin-left: 0.8em;
-}
-.masthead .ui.menu .ui.button {
-  margin-left: 0.5em;
-}
-.masthead h1.ui.header {
-  margin-top: 0.5em;
-  margin-bottom: 0em;
-  font-size: 4em;
-  font-weight: normal;
-  font-family: 'Abel', 'Lato', sans-serif;
-}
-.masthead h2 {
-  font-size: 1.7em;
-  font-weight: normal;
-  font-family: 'Abel', 'Lato', sans-serif;
-}
-
-/*.ui.header .custom.icon {*/
-/*  font-size: 1em !important;*/
-/*  vertical-align: inherit !important;*/
-/*}*/
-
-/*tooltip styles*/
-
-/*these styles come from: https://github.com/Caged/d3-tip*/
-.d3-tip {
-  z-index: 101;
-  line-height: 1;
-  padding: 5px;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  /*border-radius: 1px;*/
-  text-align: left;
-  pointer-events: none;
-}
-
-/* Northward tooltips */
-.d3-tip.n:after {
-  /*content: "\25BC";*/
-  margin: -1px 0 0 0;
-  top: 100%;
-  left: 0;
-  text-align: center;
-}
-
-/* Southward tooltips */
-.d3-tip.s:after {
-  /*content: "\25B2";*/
-  margin: 0 0 1px 0;
-  top: -8px;
-  left: 0;
-  text-align: center;
-}
-
-/* Eastward tooltips */
-.d3-tip.e:after {
-  margin: -4px 0 0 0;
-  top: 50%;
-  left: -8px;
-}
-
-/* Westward tooltips */
-.d3-tip.w:after {
-    margin: -4px 0 0 -1px;
-    top: 50%;
-    left: 100%;
+.nav-bar a {
+  color: #ffdd2fff;
+  text-decoration: none;
 }
 
 .header-section {
-    background-image: url('https://media.discordapp.net/attachments/1121324118730604606/1121350283214209034/lurunchik_Generate_a_seamless_pattern_for_a_header_image_in_the_8198033b-70a7-43a9-98d9-1cef9bfbbcab.png?width=1168&height=1168');
-    color: white;
-    padding: 150px 0;
-}
-.header-section .ui.huge.header {
-    font-size: 3em;
-}
-.header-section .ui.huge.message {
-    background-color: rgba(0, 0, 0, 0);
-    padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  height: 650px;
+  position: relative;
 }
 
-
-.header-section .ui.huge.header {
-    font-size: 3em;
-    text-shadow: none;
-    background-color: #F7A728;
-    border-radius: 50px;
-    padding: 20px;
+.header-content {
+  width: 50%;
+  text-align: center;
+  margin: auto;
 }
 
+.header-content h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.header-content p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
 
 .button-container {
-    text-align: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.paper-button {
-    background-color: #F7A728 !important;
-    color: black !important;
+.button-container a {
+  color: #ffdd2fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #ffdd2fff;
+  border-radius: 5px;
 }
 
-.header-section {
-    padding: 150px !important; /* Increase padding */
+.header-image {
+  width: 37%;
 }
 
-.description-section {
-    background-color: #121A2E !important;
-    color: #F7A728 !important;
-    padding: 60px 0 !important;
-
+.sticker {
+  max-width: 80%;
+  height: auto;
+  border: 2px solid #ffdd2fff;
+  border-radius: 5px;
 }
 
-.description-section .ui.container.text-container {
-    max-width: 1500px !important; /* Adjust this value to control the width of the text */
-    margin: 0 auto !important; /* Center the text container */
+.content-section {
+  padding: 2em 0;
+  background-color: #fff;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.dataset-section h2 {
+  font-size: 2em;
+  color: #ffdd2fff;
+  margin-bottom: 1em;
+}
+
+.dataset-section p {
+  font-size: 1.2em;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ...existing styles... */
+
+.dataset-section {
+  background-color: #3e4757ff;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.intro-text {
+  font-size: 1.2em;
+}
+
+.data-fields {
+  font-size: 1.1em;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: none;
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  background: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
 }

@@ -5,93 +5,99 @@
     <meta charset="utf-8">
 
     <title>WikiHowQA</title>
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <script type="text/javascript" src="https://semantic-ui.com/javascript/library/tablesort.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Merriweather&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="base.css">
 </head>
 
-<body>
-<div class="ui grid center aligned header-section">
-    <div class="row">
-        <div class="column padding-reset">
-            <div class="ui huge center aligned page grid">
-                <h1 class="ui huge header">WikiHowQA</h1>
-            </div>
-        </div>
+
+<body style="font-family: 'Lato', sans-serif;">
+
+<nav class="nav-bar">
+  <a href="#home">Home</a>
+  <a href="#about-wikihowqa">About Dataset</a>
+  <a href="#dataset-structure">Dataset Structure</a>
+  <a href="#license">License</a>
+  <a href="#download">Download</a>
+  <!-- Add more links as needed -->
+</nav>
+
+
+<header class="header-section" id="home">
+  <div class="header-content">
+    <h1>WikiHowQA</h1>
+    <p>Introducing WikiHowQA, a unique collection of 'how-to' content from WikiHow, transformed into a rich dataset featuring 11,746 human-authored answers and 74,527 supporting documents. Designed for researchers, it presents a unique opportunity to tackle the challenges of creating comprehensive answers from multiple documents, and grounding those answers in the real-world context provided by the supporting documents.</p>
+    <div class="button-container">
+      <a href="./data/ACL_MD_NFQA_dataset.pdf" target="_blank">Paper</a>
+      <a href="#download">Download</a>
     </div>
-</div>
-
-<div class="ui vertical stripe segment description-section">
-    <div class="ui container text-container">
-        <p>Introducing <b>WikiHowQA</b>, a unique collection of 'how-to' content from WikiHow, transformed into a rich dataset featuring 11,746 human-authored answers and 74,527 supporting documents. Designed for researchers, it presents a unique opportunity to tackle the challenges of creating comprehensive answers from multiple documents, and grounding those answers in the real-world context provided by the supporting documents.</p>
-        <div class="button-container">
-            <a class="ui button paper-button" href="./data/ACL_MD_NFQA_dataset.pdf">Paper &raquo;</a>
-        </div>
-        <div class="button-container">
-    <a class="ui button paper-button" href="https://huggingface.co/datasets/Lurunchik/WikiHowNFQA" target="_blank">View on Hugging Face</a>
-</div>
-</div>
-
-<div class="ui container fluid" style="margin-bottom: 3em;"></div>
-
-
-
-
-
-
-
-
-
-<div class="ui container " style="margin-top: 1em; margin-bottom: 3em;">
-    <div class="ui three item secondary pointing menu">
-        <a class=" item" id="dataset" onclick="location.href='index.html#task'">
-            <i class="database icon"></i>
-            Dataset
-        </a>
-        <a class=" item" id="explore" onclick="location.href='explore_task1_dataset1.html#task'">
-            <i class="chart bar outline icon"></i>
-            Explore
-        </a>
-        <a class=" item" id="download" onclick="location.href='download_task1_dataset1.html#task'">
-            <i class="cloud download icon"></i>
-            Download</a>
-    </div>
-</div>
-
-
-
-
-<div class="ui placeholder segment">
-  <div class="ui icon header">
-    <i class="download icon"></i>
-    <a class="ui button paper-button" href="https://huggingface.co/datasets/Lurunchik/WikiHowNFQA" target="_blank">The main dataset part</a>
-    The content part are accessible after filling the following form and sending it to lurunchik@gmail.com
-    <iframe src="data/2023%20WikiHowQA%20Data%20Transfer%20Agreement.pdf" width="100%" height="500px"></iframe>
   </div>
-  <div class="inline">
-    <a class="ui button paper-button" href="data/2023%20WikiHowQA%20Data%20Transfer%20Agreement.pdf" download>Download form &raquo;</a>
+  <div class="header-image">
+    <img class="sticker" src="./data/examplemanualbg.jpg" alt="Sticker">
   </div>
+</header>
+
+<main style="padding: 20px;">
+
+<section id="about-wikihowqa" class="dataset-section">
+  <div class="content-container">
+    <h2>About WikiHowQA</h2>
+    <p>The WikiHowQA dataset is derived from <a href="https://www.wikihow.com/Main-Page" target="_blank" style="color: #ffdd2fff;"><b>WikiHow</b></a>, a popular online platform that provides how-to guides on a wide range of topics. The dataset is structured to include a <b>question</b>, <b>a set of related documents</b>, and <b>a human-authored answer</b>. The questions are non-factoid, requiring comprehensive, multi-sentence answers. The related documents provide the necessary information to generate an answer.</p>
+    <p>WikiHowQA is designed for researchers and presents a unique opportunity to tackle the challenges of creating comprehensive answers from multiple documents, and grounding those answers in the real-world context provided by the supporting documents.</p>
+  </div>
+</section>
+
+<section id="dataset-structure" class="dataset-section">
+  <div class="content-container">
+    <h2>Dataset Structure</h2>
+    <p class="intro-text">The WikiHowQA dataset is composed of instances, each containing a question, a set of related documents,
+      and a human-authored answer. The WikiHowQA dataset is divided into two parts:</p>
+    <h3>QA Part</h3>
+    <p>This part contains questions, answers, and links to web archive snapshots of related HTML pages.
+      It is accessible for downloading on Hugging Face. Each dataset instance includes:</p>
+    <ul>
+      <li><b>article_id:</b> An integer identifier for the article corresponding to article_id from WikHow API.</li>
+      <li><b>question:</b> The non-factoid instructional question.</li>
+      <li><b>answer:</b> The human-written answer to the question corresponding human-written answer article summary from WikiHow website.</li>
+      <li><b>related_document_urls_wayback_snapshots:</b> A list of URLs to web archive snapshots of related documents corresponding references from WikiHow article.</li>
+      <li><b>split:</b> The split of the dataset that the instance belongs to ('train', 'validation', or 'test').</li>
+      <li><b>cluster:</b> An integer identifier for the cluster that the instance belongs to.</li>
+    </ul>
+    <h3>Document Content Part</h3>
+    <p>This part contains parsed HTML content from related documents. It is available for research groups
+      to use via signing a Data Transfer Agreement with RMIT University. Each instance includes:</p>
+    <ul>
+      <li><b>article_id:</b> The unique identifier of the article on the WikiHow website.</li>
+      <li><b>original_url:</b> The original URL of the web page containing the article.</li>
+      <li><b>archive_url:</b> The URL of a snapshot of the web page from archive.org. The snapshot is the version closest to when the article was created or modified.</li>
+      <li><b>parsed_text:</b> The plain text parsed from the URL in the form of text passages without any HTML text and page structures.</li>
+      <li><b>parsed_md:</b> The text parsed in MD format, which preserves formatting such as tables and lists when extracting text content from the web page.</li>
+    </ul>
+  </div>
+</section>
+
+
+<div class="carousel">
+  <div class="carousel-item active">
+    <!-- Data Instance 1 -->
+  </div>
+  <div class="carousel-item">
+    <!-- Data Instance 2 -->
+  </div>
+  <div class="carousel-item">
+    <!-- Data Instance 3 -->
+  </div>
+  <!-- Add more carousel items as needed -->
+  <button class="carousel-control prev">Prev</button>
+  <button class="carousel-control next">Next</button>
 </div>
 
 
-
-
-
-<br>
-<div class="ui divider"></div>
-<div class="ui vertical footer segment">
-    <div class="ui container">
-        © 2022 | <a href="https://github.com/Lurunchik/wikihowQA"> WikiHowQA on Github</a>
-    </div>
-</div>
-
+</main>
 </body>
-
 </html>
