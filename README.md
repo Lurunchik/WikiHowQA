@@ -1,7 +1,7 @@
 #  WikiHowQA: A Comprehensive Benchmark for \\ Multi-Document Non-Factoid Question Answering
 
 This repository is for the paper "WikiHowQA: A Comprehensive Benchmark for Multi-Document Non-Factoid Question Answering" presented at ACL 2023. 
-The paper introduces WikiHowQA, a unique collection of 'how-to' content from WikiHow, transformed into a rich dataset featuring 11,746 human-authored answers
+The paper introduces WikiHowNFQA, a unique collection of 'how-to' content from WikiHow, transformed into a rich dataset featuring 11,746 human-authored answers
 and 74,527 supporting documents. 
 
 The dataset is designed for researchers and presents a unique opportunity to tackle the challenges 
